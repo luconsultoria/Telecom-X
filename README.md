@@ -1,9 +1,9 @@
 Este projeto demonstra como aplicar técnicas de ETL e EDA para entender melhor a evasão de clientes da Telecom X e descobrir insights relevantes para tomada de decisões estratégicas.
 
-1.Análise de Evasão de Clientes (Churn) — Telecom X
+1. Análise de Evasão de Clientes (Churn) — Telecom X
 Este projeto realiza uma análise detalhada sobre a evasão de clientes (churn) da Telecom X, utilizando técnicas de ETL (Extração, Transformação e Carga) e Análise Exploratória de Dados (EDA).
 
-2.Tecnologias Utilizadas
+2. Tecnologias Utilizadas
 - Python 3.x
 - Pandas
 - NumPy
@@ -11,19 +11,19 @@ Este projeto realiza uma análise detalhada sobre a evasão de clientes (churn) 
 - Matplotlib
 - JSON
 
-3.Etapas do Projeto
+3. Etapas do Projeto
 
-3.1.Extração
+3.1. Extração
 Os dados foram extraídos de um arquivo JSON contendo informações estruturadas em formato aninhado. A extração foi realizada com a função json_normalize da biblioteca pandas.
 
-3.2.Transformação
+3.2. Transformação
 As transformações aplicadas incluíram:
 - Padronização de nomes de colunas: remoção de prefixos como customer., internet., phone., account. e substituição de Charges. por Charges_.
 - Conversão de tipos de dados: conversão de colunas como Charges_Total para float e tratamento de valores nulos.
 - Normalização de categorias: categorias como 'No internet service' e 'No phone service' foram transformadas em 'No'.
 - Codificação binária: variáveis como 'SeniorCitizen', 'Partner', 'Dependents' e outras foram convertidas para 0 e 1.
 
-3.3.Carga
+3.3. Carga
 Após o processo de transformação, os dados foram carregados em um novo DataFrame (df_final) para realização da análise exploratória.Foi feito Carga e Análise (EDA) para:
 - Distribuição de Churn:
 - Churn por Tipo de Contrato:
